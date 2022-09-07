@@ -1,0 +1,1 @@
+cmd_/home/emy/linux_test_app/kernel_module_x86/usb-self.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/emy/linux_test_app/kernel_module_x86/usb-self.ko /home/emy/linux_test_app/kernel_module_x86/usb-self.o /home/emy/linux_test_app/kernel_module_x86/usb-self.mod.o ;  true

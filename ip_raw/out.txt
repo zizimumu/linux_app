@@ -1,0 +1,206 @@
+# tracer: nop
+#
+# entries-in-buffer/entries-written: 195/195   #P:1
+#
+#                              _-----=> irqs-off
+#                             / _----=> need-resched
+#                            | / _---=> hardirq/softirq
+#                            || / _--=> preempt-depth
+#                            ||| /     delay
+#           TASK-PID   CPU#  ||||    TIMESTAMP  FUNCTION
+#              | |       |   ||||       |         |
+       rpc.statd-311   [000] .n..    10.370000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+       rpc.statd-311   [000] .n..    10.370000: dev_hard_start_xmit: dev_hard_start_xmit
+         rpcbind-307   [000] .n..    10.380000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+         rpcbind-307   [000] .n..    10.380000: dev_hard_start_xmit: dev_hard_start_xmit
+            tput-354   [000] .ns.    12.380000: __dev_queue_xmit: q->enqueue -->
+            tput-354   [000] .ns.    12.380000: __dev_queue_xmit:  enqueue -->
+    avahi-daemon-352   [000] ....    12.460000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    12.460000: __dev_queue_xmit:  enqueue -->
+            tput-361   [000] ..s.    12.530000: __dev_queue_xmit: q->enqueue -->
+            tput-361   [000] ..s.    12.530000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+            tput-361   [000] ..s.    12.530000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+            tput-361   [000] ..s.    12.530000: dev_hard_start_xmit: dev_hard_start_xmit
+           crond-364   [000] .ns.    12.630000: __dev_queue_xmit: q->enqueue -->
+           crond-364   [000] .ns.    12.630000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+           crond-364   [000] .ns.    12.630000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+           crond-364   [000] .ns.    12.630000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    12.710000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    12.710000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    12.710000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    12.710000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    12.960000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    12.960000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    12.960000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    12.960000: dev_hard_start_xmit: dev_hard_start_xmit
+     kworker/0:1-16    [000] ....    13.000000: __dev_queue_xmit: q->enqueue -->
+     kworker/0:1-16    [000] ....    13.000000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+     kworker/0:1-16    [000] ....    13.000000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+     kworker/0:1-16    [000] ....    13.000000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    13.160000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    13.160000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    13.160000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    13.160000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    13.270000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    13.270000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    13.270000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    13.270000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    13.360000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    13.360000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    13.360000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    13.360000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    13.520000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    13.520000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    13.520000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    13.520000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    13.770000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    13.770000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    13.770000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    13.770000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    13.970000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    13.970000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    13.970000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    13.970000: dev_hard_start_xmit: dev_hard_start_xmit
+     kworker/0:2-64    [000] ....    14.080000: __dev_queue_xmit: q->enqueue -->
+     kworker/0:2-64    [000] ....    14.080000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+     kworker/0:2-64    [000] ....    14.080000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+     kworker/0:2-64    [000] ....    14.080000: dev_hard_start_xmit: dev_hard_start_xmit
+     kworker/0:2-64    [000] ....    14.080000: __dev_queue_xmit: q->enqueue -->
+     kworker/0:2-64    [000] ....    14.080000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+     kworker/0:2-64    [000] ....    14.080000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+     kworker/0:2-64    [000] ....    14.080000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    14.110000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    14.110000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    14.110000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    14.110000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.170000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.170000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.170000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.170000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.180000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.180000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.180000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.180000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.180000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.180000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.180000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.180000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.220000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.220000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.220000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.220000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.430000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.430000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.430000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.430000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.430000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.430000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.430000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.430000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    14.650000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    14.650000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    14.650000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    14.650000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.680000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.680000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.680000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.680000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.680000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.680000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.680000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.680000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.690000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.690000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.690000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.690000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    14.800000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    14.800000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    14.800000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    14.800000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.890000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.890000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.890000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.890000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    14.890000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    14.890000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    14.890000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    14.890000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    15.030000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    15.030000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    15.030000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    15.030000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    15.230000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    15.230000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    15.230000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    15.230000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    15.940000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    15.940000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    15.940000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    15.940000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    15.940000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    15.940000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    15.940000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    16.270000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    16.270000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    16.270000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    16.270000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    17.080000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    17.080000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    17.080000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    17.080000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    17.290000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    17.290000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    17.290000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    17.290000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    17.990000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    17.990000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    17.990000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    17.990000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    18.000000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    18.000000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    18.000000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    18.000000: dev_hard_start_xmit: dev_hard_start_xmit
+    avahi-daemon-352   [000] ....    18.000000: __dev_queue_xmit: q->enqueue -->
+    avahi-daemon-352   [000] ....    18.000000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+    avahi-daemon-352   [000] ....    18.000000: validate_xmit_skb: skb->ip_summed 3, encapsulation 0
+    avahi-daemon-352   [000] ....    18.000000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] .ns.    18.240000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] .ns.    18.240000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] .ns.    18.240000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] .ns.    18.240000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    26.720000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    26.720000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    26.720000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    26.720000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    42.720000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    42.720000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    42.720000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    42.720000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.    76.000000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.    76.000000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.    76.000000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.    76.000000: dev_hard_start_xmit: dev_hard_start_xmit
+          <idle>-0     [000] ..s.   141.280000: __dev_queue_xmit: q->enqueue -->
+          <idle>-0     [000] ..s.   141.280000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+          <idle>-0     [000] ..s.   141.280000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+          <idle>-0     [000] ..s.   141.280000: dev_hard_start_xmit: dev_hard_start_xmit
+        send_arm-406   [000] ....   147.570000: packet_sendmsg: packet_snd
+        send_arm-406   [000] ....   147.570000: __dev_queue_xmit: q->enqueue -->
+        send_arm-406   [000] ....   147.570000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+        send_arm-406   [000] ....   147.570000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+        send_arm-406   [000] ....   147.570000: dev_hard_start_xmit: dev_hard_start_xmit
+        send_arm-408   [000] ....   189.940000: packet_sendmsg: packet_snd
+        send_arm-408   [000] ....   189.940000: __dev_queue_xmit: q->enqueue -->
+        send_arm-408   [000] ....   189.940000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+        send_arm-408   [000] ....   189.940000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+        send_arm-408   [000] ....   189.940000: dev_hard_start_xmit: dev_hard_start_xmit
+        send_arm-409   [000] ....   192.630000: packet_sendmsg: packet_snd
+        send_arm-409   [000] ....   192.630000: __dev_queue_xmit: q->enqueue -->
+        send_arm-409   [000] ....   192.630000: __dev_queue_xmit: TCQ_F_CAN_BYPASS -->
+        send_arm-409   [000] ....   192.630000: validate_xmit_skb: skb->ip_summed 0, encapsulation 0
+        send_arm-409   [000] ....   192.630000: dev_hard_start_xmit: dev_hard_start_xmit
